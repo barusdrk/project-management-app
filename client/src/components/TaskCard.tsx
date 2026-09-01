@@ -28,7 +28,7 @@ export default function TaskCard({ task, onEdit, onDelete, onStatusChange }: Tas
         <button type="button" onClick={() => onEdit(task)} className="inline-flex items-center gap-2 rounded-lg border border-(--border) px-3 py-2 text-sm font-medium text-(--text-secondary) hover:bg-(--surface-hover) hover:text-(--text)">
           <Pencil size={15} /> Edit
         </button>
-        <button type="button" onClick={() => onDelete(task._id)} className="inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-(--danger) hover:bg-(--danger-soft)">
+        <button type="button" onClick={() => onDelete(task._id)} className="inline-flex items-center gap-2 rounded-lg bg-(--danger) px-3 py-2 text-sm font-medium text-white hover:bg-(--danger-hover)">
           <Trash2 size={15} /> Delete
         </button>
       </div>

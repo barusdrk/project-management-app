@@ -20,8 +20,9 @@
   --success-bg: #ecfdf5;
   --success-text: #047857;
   --danger: #dc2626;
+  --danger-hover: #b91c1c;
   --danger-soft: #fef2f2;
-  --danger-text: #b91c1c;
+  --danger-text: #991b1b;
   --warning: #d97706;
   --warning-soft: #fffbeb;
   --warning-text: #b45309;
@@ -57,16 +58,11 @@
   --text-muted: #94a3b8;
   --border: #334155;
   --border-hover: #475569;
-  --accent: #818cf8;
-  --accent-hover: #6366f1;
   --accent-soft: #312e81;
   --accent-text: #c7d2fe;
   --success: #34d399;
   --success-bg: #064e3b;
   --success-text: #6ee7b7;
-  --danger: #f87171;
-  --danger-soft: #450a0a;
-  --danger-text: #fca5a5;
   --warning: #fbbf24;
   --warning-soft: #451a03;
   --warning-text: #fcd34d;
@@ -88,7 +84,6 @@
 }
 
 body {
-  margin: 0;
   background: var(--bg);
   color: var(--text);
 }
@@ -105,7 +100,6 @@ h1 {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: -1px;
-  margin: 0;
 
   @media (max-width: 1024px) {
     font-size: 30px;
@@ -117,15 +111,10 @@ h2 {
   font-weight: 600;
   line-height: 118%;
   letter-spacing: -0.24px;
-  margin: 0;
 
   @media (max-width: 1024px) {
     font-size: 20px;
   }
-}
-
-p {
-  margin: 0;
 }
 
 button,

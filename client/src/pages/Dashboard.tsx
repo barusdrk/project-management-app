@@ -105,7 +105,7 @@ export default function Dashboard() {
                 {projects.map((project) => {
                   const projectTasks = tasks.filter((task) => typeof task.project === "string" ? task.project === project._id : task.project._id === project._id);
                   return (
-                    <Link key={project._id} to={`/projects/${project._id}`} className="group rounded-xl border border-(--border) bg-(--surface) p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-(--accent-border) hover:bg-(--surface-hover) hover:shadow-md">
+                    <Link key={project._id} to={`/projects/${project._id}`} className="group rounded-xl border border-(--border) bg-(--surface) p-6 shadow-sm transition hover:border-(--accent-border) hover:bg-(--surface-hover) hover:shadow-md">
                       <div className="flex items-start justify-between">
                         <div className="rounded-lg bg-(--accent-soft) p-2 text-(--accent)">
                           <FolderKanban size={20} />

@@ -81,7 +81,7 @@ export default function ProjectDetails() {
           <Link to="/dashboard" className="inline-flex items-center gap-2 text-sm font-medium text-(--text-secondary) hover:text-(--text)">
             <ArrowLeft size={17} /> Dashboard
           </Link>
-          <button onClick={handleDeleteProject} className="inline-flex items-center gap-2 text-sm font-medium text-(--danger) hover:opacity-80">
+          <button onClick={handleDeleteProject} className="inline-flex items-center gap-2 rounded-lg bg-(--danger) px-3 py-2 text-sm font-medium text-white hover:bg-(--danger-hover)">
             <Trash2 size={16} /> Delete project
           </button>
         </div>
@@ -126,7 +126,7 @@ export default function ProjectDetails() {
                 setEditingTask(null);
                 setShowForm(true);
               }}
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-(--accent) px-5 py-3 font-medium text-(--accent-contrast) hover:opacity-90"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-(--accent) px-5 py-3 font-medium text-white hover:opacity-90"
             >
               <Plus size={18} /> New task
             </button>

@@ -115,7 +115,7 @@ export default function Profile() {
             <p className="mt-2 text-sm text-(--text-secondary)">
               Permanently delete your account and all associated data.
             </p>
-            <button type="button" onClick={handleDeleteAccount} disabled={saving || deleting} className="mt-4 rounded-lg border border-(--danger) px-5 py-3 text-sm font-medium text-(--danger-text) transition hover:bg-(--danger-soft) disabled:cursor-not-allowed disabled:opacity-50">
+            <button type="button" onClick={handleDeleteAccount} disabled={saving || deleting} className="mt-4 rounded-lg bg-(--danger) px-5 py-3 text-sm font-medium text-(--danger-soft) transition hover:bg-(--danger-hover) disabled:cursor-not-allowed disabled:opacity-50">
               {deleting ? "Deleting account..." : "Delete account"}
             </button>
           </div>

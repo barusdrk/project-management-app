@@ -25,7 +25,7 @@ navigate("/login");
 return ( <header className="h-16 border-b border-(--border) bg-(--surface)"> <div className="flex h-full items-center justify-between px-4 sm:px-6"> <button type="button" onClick={onMenuClick} className="rounded-lg p-2 text-(--text-secondary) hover:bg-(--surface-hover) hover:text-(--text) lg:hidden" aria-label="Open menu"> <Menu size={21} /> </button> <div className="ml-auto flex items-center gap-4">
 <button type="button" onClick={() => setDark((value) => !value)} className="rounded-lg p-2 text-(--text-secondary) hover:bg-(--surface-hover) hover:text-(--text)" aria-label={dark ? "Switch to light mode" : "Switch to dark mode"} title={dark ? "Light mode" : "Dark mode"}>
 {dark ? <Sun size={19} /> : <Moon size={19} />} </button> <Link to="/profile" className="hidden text-sm font-medium text-(--text-secondary) hover:text-(--text) sm:block">
-{user?.name} </Link> <button type="button" onClick={handleLogout} className="text-sm font-medium text-(--text-secondary) hover:text-(--danger)">
+{user?.name} </Link> <button type="button" onClick={handleLogout} className="text-sm font-medium text-(--text-secondary) hover:text-(--text)">
 Logout </button> </div> </div> </header>
 );
 }
