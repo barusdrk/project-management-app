@@ -22,7 +22,6 @@ export default function Projects() {
         setLoading(false);
       }
     }
-
     loadProjects();
   }, []);
 
@@ -52,11 +51,14 @@ export default function Projects() {
               <FolderKanban className="mx-auto text-(--text-muted)" size={40} />
               <h2 className="mt-4 font-semibold text-(--text)">No projects yet</h2>
               <p className="mt-1 text-sm text-(--text-secondary)">Create your first project from the dashboard.</p>
+              <Link to="/dashboard" className="mt-5 inline-flex items-center gap-2 rounded-lg bg-(--accent) px-4 py-2 text-sm font-medium text-white hover:bg-(--accent-hover)">
+                <Plus size={16} /> Create project
+              </Link>
             </div>
           ) : (
             <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
               {projects.map((project) => (
-                <Link key={project._id} to={`/projects/${project._id}`} className="rounded-xl border border-(--border) bg-(--surface) p-6 shadow-sm transition hover:-translate-y-0.5 hover:border-(--accent) hover:shadow-md">
+                <Link key={project._id} to={`/projects/${project._id}`} className="rounded-xl border border-(--border) bg-(--surface) p-6 shadow-sm transition hover:border-(--accent) hover:shadow-md">
                   <div className="flex items-start justify-between">
                     <div className="rounded-lg bg-(--accent-soft) p-2 text-(--accent)">
                       <FolderKanban size={20} />
