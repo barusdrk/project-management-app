@@ -1,6 +1,6 @@
 # Project Management App
 
-A full-stack project management application for creating projects, organizing tasks, tracking task status, and managing user accounts. Built with **React, TypeScript, Express, MongoDB, and Tailwind CSS**.
+A full-stack project management application for creating projects, organizing tasks, tracking task status, and managing user accounts, with authentication, CRUD operations. Built with **React, TypeScript, Express, MongoDB, and Tailwind CSS**.
 
 ## Features
 
@@ -301,10 +301,10 @@ CLIENT_URL
 
 `CLIENT_URL` must contain the deployed frontend URL.
 
-Example:
+Render
 
-```env
-CLIENT_URL=https://your-frontend.vercel.app
+```
+CLIENT_URL=https://project-management-app-teal-seven.vercel.app
 ```
 
 ### Frontend — Vercel
@@ -317,10 +317,10 @@ Set the root directory to:
 client
 ```
 
-Configure:
+Vercel
 
-```env
-VITE_API_URL=https://your-backend.onrender.com/api
+```
+VITE_API_URL=https://project-management-app-o9jb.onrender.com/api
 ```
 
 The frontend must use the deployed backend URL rather than `localhost`.
