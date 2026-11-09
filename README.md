@@ -2,6 +2,10 @@
 
 A full-stack project management application for creating projects, organizing tasks, tracking task status, and managing user accounts, with authentication, CRUD operations. Built with **React, TypeScript, Express, MongoDB, and Tailwind CSS**.
 
+## Live Demo
+
+**Portfolio:** [project-management-app-git-main-barusdrks-projects.vercel.app](https://project-management-app-git-main-barusdrks-projects.vercel.app/login)
+
 ## Features
 
 * User registration and authentication
